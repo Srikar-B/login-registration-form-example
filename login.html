@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="logic.js"></script>
+	<title> Signin Page</title>
+	<style type="text/css">
+		#form{border:1px solid black;background-position: center;margin-left: 35%;margin-right: 30%;padding: 10px;}
+		h1{color: #70a5fa;}
+		#one,#two{width: 300px; height:35px;}
+		
+		#three{background-color:#40ba30; height: 35px;width: 100px; border-radius:5px; }
+	
+
+	</style>
+</head>
+<body>
+
+	<div id="form">
+		<h1>Registration successful</h1>
+		<h3>Enter your details to sign in</h3><br>
+	<form id="login">
+		
+		<input type="text" id="one" placeholder="Email address"/><span id="a"></span><br>
+		<input type="password" placeholder="password" id="two"/><span id="b"></span><br><br>
+		<input type="button" value="Sign In" id="three" onclick="log(document.getElementById('one').value,document.getElementById('two').value)">
+		
+	</form>
+</div>
+
+</body>
+</html>

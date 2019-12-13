@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Your Home</title>
+	
+
+</head>
+<body>
+	<h1 >Welcome <span id="acc"></span></h1>
+	
+<script>
+		function third()
+
+		{
+			var p=localStorage.getItem("f");
+			var q=localStorage.getItem("s");
+			document.getElementById("acc").innerHTML=p+" "+q;
+
+		}	
+		third();
+
+	</script>
+
+</body>
+</html>

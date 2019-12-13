@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration page</title>
+	<script type="text/javascript" src="logic.js"></script>
+	<meta charset="UTF-8"> 
+	<style type="text/css">
+		#form{border:1px solid black;background-position: center;margin-left: 35%;margin-right: 35%;padding: 10px;}
+		h1{color: #70a5fa;}
+		#FN,#SN,#ph,#em,#pw,#rpw{width: 300px; margin:3px 0 3px 0 ; }
+		#signup{background-color:#40ba30; height: 35px;width: 100px; border-radius:5px; }
+	</style>
+
+</head>
+<body>
+	
+	<div id="form">
+		<form action="login.html">
+			<h1>Create New Account</h1>
+			<h3>It is quick and easy</h3>
+			<input type="text" id="FN" placeholder="First name"/><span id="a"></span>
+			<input type="text" id="SN" placeholder="Surname"/><span id="b"></span><br>	
+			<input type="text" id="ph" placeholder="Phone number"/><span id="c"></span><br>
+			<input type="text" id="em" placeholder="Email address"/><span id="d"></span><br>
+			<input type="password" placeholder="password" id="pw"/><span id="e"></span><br>
+			<input type="password" placeholder="retype password" id="rpw"/><span id="f"></span><br>
+
+	
+			<label>Gender:</label>
+			<input type="radio" name="gen"  id="fem"/><label>Female</label>
+			<input type="radio" name="gen" id="mal"/><label>Male</label>
+			<input type="radio" name="gen" id="oth" /><label>Others</label><br>
+		
+			<input type="button" value="Sign Up" id="signup" 
+			onclick='valid(document.getElementById("FN").value,
+						   document.getElementById("SN").value,
+						   document.getElementById("ph").value,
+						   document.getElementById("em").value,
+						   document.getElementById("fem").checked,
+						   document.getElementById("mal").checked,
+						   document.getElementById("oth").checked,
+						   document.getElementById("pw").value,
+						   document.getElementById("rpw").value
+						  )'>
+
+		</form>
+
+	</div>
+	
+	<!--SCRIPT IS IN ANOTHER FILE-->
+
+</body>
+</html>-
